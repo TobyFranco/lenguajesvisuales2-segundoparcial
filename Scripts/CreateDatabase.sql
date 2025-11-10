@@ -2,14 +2,8 @@
 -- Para Segundo Parcial - Lenguajes Visuales 2
 
 -- Crear base de datos
-IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'ClienteDB')
-BEGIN
-    CREATE DATABASE ClienteDB;
-END
-GO
-
-USE ClienteDB;
-GO
+-- La base de datos ya existe en Somee, solo usarla
+-- USE ClienteDB; (Somee ya está conectado a la BD)
 
 -- Tabla Cliente
 IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Cliente')
